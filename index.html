@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dev Kumar portfolio for HID Algorithms Engineering, focused on capacitive touch sensing, C/C++ integration, signal processing, driver layers, integration testing, AI developer tooling, and machine learning evaluation."
+    />
+    <title>Dev Kumar | HID Algorithms Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Dev Kumar home">
+          <span class="brand-mark">DK</span>
+          <span>
+            <strong>Dev Kumar</strong>
+            <small>HID Algorithms Engineer</small>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Portfolio sections">
+          <a href="#pipeline">Pipeline</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+        </nav>
+        <div class="profile-links" aria-label="Profile links">
+          <a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-band">
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Capacitive sensing | C/C++ | Python | drivers | AI tooling</p>
+              <h1>HID algorithms shaped from raw signal to reliable touch events.</h1>
+              <p class="hero-lede">
+                I prototype sensing algorithms, validate them at the hardware/software boundary, and integrate them into
+                production software stacks with C, C++, Python, driver-layer thinking, end-to-end test metrics, and
+                AI-assisted development workflows.
+              </p>
+              <p class="dynamic-line" aria-live="polite">
+                Active signal:
+                <span id="rotating-signal">turning noisy sensor traces into stable HID-style events</span>
+              </p>
+              <div class="hero-actions" aria-label="Primary actions">
+                <a class="button primary" href="#projects">View Projects</a>
+                <a class="button secondary" href="#pipeline">Trace Pipeline</a>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="image-stage" data-tilt-card>
+                <img
+                  src="assets/apple-hid-algorithms-hero.png"
+                  alt="Dark embedded systems lab showing touch sensor grid, robotic actuator, multi-channel waveforms, signal-processing stages, driver integration, and validation metrics"
+                />
+                <div class="scan-line" aria-hidden="true"></div>
+                <div class="floating-chip chip-top">
+                  <span>Dev cycle gain</span>
+                  <strong>30%</strong>
+                </div>
+                <div class="floating-chip chip-bottom">
+                  <span>ML lift</span>
+                  <strong>35%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="metric-strip reveal" aria-label="Career metrics">
+            <article>
+              <strong data-count="8" data-suffix="+">0</strong>
+              <span>years building production software and algorithms</span>
+            </article>
+            <article>
+              <strong data-count="99.99" data-suffix="%">0</strong>
+              <span>uptime supported through integration quality</span>
+            </article>
+            <article>
+              <strong data-count="60" data-suffix="%">0</strong>
+              <span>manual processing reduction through data pipelines</span>
+            </article>
+            <article>
+              <strong data-count="10000" data-suffix="+">0</strong>
+              <span>users supported by interaction-performance work</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-band pipeline" id="pipeline">
+          <div class="section-heading reveal">
+            <p class="eyebrow">HID algorithm pipeline</p>
+            <h2>From sensor acquisition to event delivery and release validation</h2>
+            <p>
+              Reliable interaction work lives in the details: signal capture, filtering, feature extraction, thresholds,
+              hysteresis, debounce, driver boundaries, scenario coverage, and performance metrics that can catch a
+              regression before a user ever feels it.
+            </p>
+          </div>
+
+          <div class="diagram-panel reveal" aria-label="HID sensing algorithm pipeline diagram">
+            <div class="diagram-rail">
+              <article class="flow-node">
+                <span>01</span>
+                <h3>Acquire</h3>
+                <p>Sensor samples, UART logs, GPIO/interrupt timing, oscilloscope traces, and logic-analyzer captures.</p>
+              </article>
+              <article class="flow-node">
+                <span>02</span>
+                <h3>Filter</h3>
+                <p>IIR and moving-average smoothing, noise characterization, baseline calibration, and drift handling.</p>
+              </article>
+              <article class="flow-node">
+                <span>03</span>
+                <h3>Detect</h3>
+                <p>Feature extraction, adaptive thresholds, hysteresis, debounce, and touch/release classification.</p>
+              </article>
+              <article class="flow-node">
+                <span>04</span>
+                <h3>Integrate</h3>
+                <p>C/C++ implementations, driver layers, firmware interfaces, OS-level integration, and event delivery.</p>
+              </article>
+              <article class="flow-node">
+                <span>05</span>
+                <h3>Exercise</h3>
+                <p>Robotic actuator runs across taps, long press, rapid bursts, palm, hover, and product configurations.</p>
+              </article>
+              <article class="flow-node">
+                <span>06</span>
+                <h3>Measure</h3>
+                <p>False positives, missed touches, latency, jitter, baseline recovery, stability, and performance cost.</p>
+              </article>
+              <article class="flow-node terminal-node">
+                <span>07</span>
+                <h3>Accelerate</h3>
+                <p>LLM-assisted coding, AI-generated tests, log summarization, and agentic data analysis pipelines.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-band craft" aria-label="Engineering craft">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How I build</p>
+            <h2>Great interaction algorithms feel obvious only after the hard parts are measured</h2>
+          </div>
+          <div class="craft-grid">
+            <article class="craft-card reveal">
+              <div class="icon-pulse" aria-hidden="true"></div>
+              <h3>Start from the waveform</h3>
+              <p>
+                I connect raw traces to user-visible behavior so tuning decisions stay grounded in noise, timing, and
+                baseline recovery.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <div class="icon-pulse amber" aria-hidden="true"></div>
+              <h3>Validate the whole path</h3>
+              <p>
+                Algorithm changes are tested end to end, from acquisition and C/C++ integration to driver boundaries and
+                product scenarios.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <div class="icon-pulse green" aria-hidden="true"></div>
+              <h3>Use AI where it compounds</h3>
+              <p>
+                AI-assisted coding, test generation, and data-analysis agents are useful when they shorten feedback loops
+                without weakening engineering judgment.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-band experience" id="experience">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Sensing algorithms, HW/SW integration, AI tooling, and production validation</h2>
+          </div>
+
+          <div class="experience-stack">
+            <article class="experience-card reveal">
+              <div class="experience-meta">
+                <span>Mar 2025 - Present</span>
+                <h3>Sprouts AI</h3>
+                <p>Software Engineer (Sensing Algorithms / AI Tooling) | Chicago, IL</p>
+              </div>
+              <ul>
+                <li>
+                  Prototyped capacitive touch-sensing algorithms in Python and integrated implementations with the
+                  software layer in C/C++, as measured by stable HID-style touch/release events across product
+                  configurations, by building the full path from sensor data acquisition through filtering, thresholding,
+                  hysteresis, and debounce to event delivery.
+                </li>
+                <li>
+                  Ensured correctness, performance, and stability at the HW/SW interface, as measured by characterized
+                  noise, transients, settling time, and baseline drift, by probing raw waveforms and interrupt timing
+                  with an oscilloscope and logic analyzer and correlating traces against UART raw-signal logs.
+                </li>
+                <li>
+                  Developed an integration test framework and performance metrics (false-positive rate, missed-touch
+                  rate, touch/release latency, jitter, baseline recovery), as measured by end-to-end validation of each
+                  algorithm version, via a robotic actuator fixture and a scenario library spanning taps, long press,
+                  rapid bursts, palm, and hover.
+                </li>
+                <li>
+                  Championed AI-powered developer tools, as measured by ~30% faster development and analysis cycles, by
+                  evaluating and deploying LLM-assisted coding, AI-based test generation, and agentic data analysis
+                  pipelines (LangChain, MCP) and defining adoption best practices.
+                </li>
+                <li>
+                  Improved candidate-matching accuracy 35%, as measured by benchmark evaluation datasets, by building
+                  classification, embedding, and neural network-based inference pipelines with automated regression
+                  checks in CI/CD (Pytest) on AWS.
+                </li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal">
+              <div class="experience-meta">
+                <span>Aug 2023 - Mar 2025</span>
+                <h3>Resilience Inc</h3>
+                <p>Software Engineer (Software Integration & ML) | Chicago, IL</p>
+              </div>
+              <ul>
+                <li>
+                  Prototyped input-driven interaction algorithms (touch handling, event processing, form validation,
+                  interrupted-flow recovery) and integrated them with the application software layer in React Native, as
+                  measured by 30% faster page loads for 10K+ users, ensuring correctness, performance, and stability
+                  across device types and product configurations.
+                </li>
+                <li>
+                  Boosted student engagement 40%, as measured by product analytics, by translating design and
+                  user-research inputs into implementable requirements and applying time-series analysis of interaction
+                  and engagement signals to validate algorithm changes before release.
+                </li>
+                <li>
+                  Developed and maintained integration test frameworks and performance metrics (interaction latency, page
+                  loads, API failure handling) in CI/CD (GitHub Actions, Jest), as measured by pre-release, end-to-end
+                  detection of regressions across device, network, and accessibility conditions.
+                </li>
+                <li>
+                  Championed AI developer-productivity tools, as measured by reduced repetitive engineering work, by
+                  evaluating AI-assisted code generation, test-case creation, log summarization, and automated QA
+                  workflows and presenting findings and recommendations to leadership.
+                </li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal">
+              <div class="experience-meta">
+                <span>Apr 2018 - Aug 2023</span>
+                <h3>Tata Steel</h3>
+                <p>Software Engineer (Systems & Data Platform)</p>
+              </div>
+              <ul>
+                <li>
+                  Developed input-processing logic converting raw user interactions, device events, and offline states
+                  into consistent behavior in Android (Java/Kotlin) and web apps, as measured by 99.99% production
+                  uptime, by integrating validation algorithms with the software layer via object-oriented design patterns
+                  across devices, networks, and configurations.
+                </li>
+                <li>
+                  Developed and maintained integration test frameworks, regression scenarios, and performance metrics
+                  (response latency, failure recovery, duplicate-action prevention, workflow completion reliability), as
+                  measured by end-to-end release-readiness validation and defined regression thresholds.
+                </li>
+                <li>
+                  Cut manual processing time 60%, as measured by workflow throughput, by building end-to-end data
+                  pipelines and time-series analysis for Learning & Development, IRIS, and Coaching platforms.
+                </li>
+                <li>
+                  Partnered with firmware-adjacent plant systems, software, QA, and operations teams from prototyping
+                  through production support, as measured by on-time releases, by reproducing edge cases from logs and
+                  communicating integration status, risks, and new form-factor readiness to leadership.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-band projects" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Low-level systems, real-time data, AI tooling, and product-facing applications</h2>
+            <p>
+              Every project includes source and demo/reference links so reviewers can inspect both implementation and
+              running or reproducible output.
+            </p>
+          </div>
+
+          <div class="project-controls reveal" aria-label="Project filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="systems">Systems</button>
+            <button class="filter-button" type="button" data-filter="signal">Signal</button>
+            <button class="filter-button" type="button" data-filter="ai">AI</button>
+            <button class="filter-button" type="button" data-filter="apps">Apps</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="systems signal">
+              <div class="project-topline"><span>Kernel</span><strong>C</strong></div>
+              <h3>Character Device Driver</h3>
+              <p>Linux character driver with file operations, ioctl handling, and user-kernel data transfer.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="systems signal">
+              <div class="project-topline"><span>Market Data</span><strong>C++</strong></div>
+              <h3>CME MDP 3.0 Feed Handler</h3>
+              <p>Low-latency multicast feed handler for binary market-data decoding and performance-focused processing.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="systems signal">
+              <div class="project-topline"><span>Hardware</span><strong>RISC</strong></div>
+              <h3>16-Bit RISC Processor</h3>
+              <p>Hardware lab implementation of processor architecture, datapath, and instruction flow.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="systems">
+              <div class="project-topline"><span>OS</span><strong>Systems</strong></div>
+              <h3>Experimental Operating System</h3>
+              <p>EXPOS project covering process, memory, filesystem, and low-level execution concepts.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="signal ai">
+              <div class="project-topline"><span>Streaming</span><strong>Kafka</strong></div>
+              <h3>Real-time Stock Market Analysis Pipeline</h3>
+              <p>Streaming data pipeline over noisy market signals with automated quality checks and repeatable metrics.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ai signal">
+              <div class="project-topline"><span>Research</span><strong>IEEE</strong></div>
+              <h3>Movie Recommendation Research</h3>
+              <p>Published comparative study benchmarking recommendation algorithms through feature engineering.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ai">
+              <div class="project-topline"><span>RAG</span><strong>LangGraph</strong></div>
+              <h3>AskMyStore</h3>
+              <p>Agentic RAG application with retrieval, LLM inference, and tool-backed orchestration.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://ask-my-store.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ai">
+              <div class="project-topline"><span>AI</span><strong>LangChain</strong></div>
+              <h3>LangChain Chat With Search</h3>
+              <p>Search-augmented conversational AI connecting query routing, retrieval, and generated responses.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ai">
+              <div class="project-topline"><span>AI</span><strong>Agents</strong></div>
+              <h3>AgentFlow</h3>
+              <p>Agent orchestration patterns using OpenAI agent tooling for multi-step tool execution.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/openAI-Agent-SDK" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/openAI-Agent-SDK" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ai systems">
+              <div class="project-topline"><span>Protocol</span><strong>MCP</strong></div>
+              <h3>MCP</h3>
+              <p>Model Context Protocol exploration for tool exposure, context exchange, and agent integration.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/MCP" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/MCP" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="systems">
+              <div class="project-topline"><span>Kubernetes</span><strong>DevOps</strong></div>
+              <h3>Voting App</h3>
+              <p>Kubernetes deployment project showing service composition, containers, and cluster orchestration.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Kubernetes-K8" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/Kubernetes-K8" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="systems apps">
+              <div class="project-topline"><span>Go</span><strong>Backend</strong></div>
+              <h3>HireLoop</h3>
+              <p>Distributed backend service focused on REST APIs, concurrency, explicit errors, and maintainability.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/hireloop" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/hireloop" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="apps signal">
+              <div class="project-topline"><span>FinTech</span><strong>Signals</strong></div>
+              <h3>TradeSentinel</h3>
+              <p>Trading surveillance interface that surfaces market signals through a focused web experience.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="apps">
+              <div class="project-topline"><span>React</span><strong>UI</strong></div>
+              <h3>Strangers</h3>
+              <p>React application with client-side flows, reusable components, and a deployed interactive UI.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://strangers-react.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="apps">
+              <div class="project-topline"><span>iOS</span><strong>Audio</strong></div>
+              <h3>Pitch Perfect</h3>
+              <p>iOS app project for recording, transforming, and playing audio with native mobile patterns.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="apps">
+              <div class="project-topline"><span>Android</span><strong>Game</strong></div>
+              <h3>TicTacToe Game</h3>
+              <p>Android game implementation focused on state management, mobile UI, and app packaging.</p>
+              <div class="project-links">
+                <a href="https://github.com/devthedevil/TicTacToe-Game" target="_blank" rel="noreferrer">Source</a>
+                <a href="https://github.com/devthedevil/TicTacToe-Game" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-band research" id="research">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research and proof points</p>
+            <h2>Algorithm benchmarking, machine learning evaluation, and low-level integration practice</h2>
+          </div>
+          <div class="research-grid">
+            <a class="research-tile reveal" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">
+              <span>Published paper</span>
+              <strong>Comparative Study of Movie Recommendation Systems using Feature Engineering</strong>
+              <p>IEEE publication benchmarking classification and regression-based recommendation algorithms.</p>
+            </a>
+            <a class="research-tile reveal" href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">
+              <span>Notebook</span>
+              <strong>Recommendation source code</strong>
+              <p>Runnable analysis notebook showing feature engineering, model evaluation, and experiment structure.</p>
+            </a>
+            <a class="research-tile reveal" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">
+              <span>Certificate</span>
+              <strong>Verified credential</strong>
+              <p>Evidence of continued learning, documentation, and repeatable technical practice.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-band contact" aria-label="Contact">
+          <div class="contact-panel reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to prototype, measure, integrate, and ship better interaction algorithms.</h2>
+            <p>
+              I am reachable at <a href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com</a> and keep current
+              engineering work visible through GitHub and LeetCode.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="mailto:devkumar.dklv@gmail.com">Email Me</a>
+              <a class="button secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
